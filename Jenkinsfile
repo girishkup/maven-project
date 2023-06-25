@@ -7,7 +7,7 @@ agent {
 
 parameters {
      choice choices: ['dev', 'prod'], name: 'select_environment'
-
+}
 environment{
   NAME = "girish"
 }
@@ -25,7 +25,7 @@ stages{
 
  
     }
-
+}
 stage('test')
 {
   parallel {
@@ -78,5 +78,4 @@ stage('deploy_dev')
 
 }
 
-}
-}
+
